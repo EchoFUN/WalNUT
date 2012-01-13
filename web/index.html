@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="language" content="en" />
+	<base href="/walnut" />
+	<link rel="stylesheet" type="text/css" href="/css/jquery.jscrollpane.css" />
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+	<script type="text/javascript" src="/js/src/ui/inform.js"></script>
+	<script type="text/javascript" src="/js/lib/tools/jquery.js"></script>
+	<script type="text/javascript" src="/js/lib/tools/jquery.mousewheel.js"></script>
+	<script type="text/javascript" src="/js/lib/tools/jquery.jscrollpane.min.js"></script>
+	<script type="text/javascript" src="/js/lib/tools/html5.js"></script>
+	<script type="text/javascript" src="/js/lib/uc/dom-drag.js"></script>
+	<script type="text/javascript" src="/js/lib/tools/jquery.zxxbox.3.0.js"></script>
+	<script type="text/javascript" src="/js/src/uc/namespace.js"></script>
+	<script type="text/javascript" src="/js/src/uc/common.js"></script>
+	<script type="text/javascript" src="/js/src/uc/turn.js"></script>
+	<script type="text/javascript" src="/js/src/uc/windows.js"></script>
+	<script type="text/javascript" src="/js/src/uc/contacts.js"></script>
+	<script type="text/javascript" src="/js/src/uc/interfaces.app.n.js"></script>
+	<script type="text/javascript" src="/js/src/uc/interfaces.app.f.js"></script>
+	<title>Walnut 1.0 Login</title>
+	<!--[if (gte IE 6)&(lte IE 8)]>
+		<script type="text/javascript" src="/walnut/js/selectivizr.js"></script>
+		<style type="text/css">
+			.login_form, .user_list { behavior: url(/walnut/js/ie-css3.htc);}
+		</style>
+	<![endif]-->
+</head>
+
+<body>
+	<div id="page">
+		<div class="header" id="header">
+			<a id="assistant"><img src="/images/assistant.png" height="120" width="100"></a>	
+			<div class="have_fun"><img src="/images/fun.png" height="91" width="154"></div>
+			<script type="text/javascript">
+				var assistentObj = $('#assistant');
+				assistentObj.css({'top': '512px', 'left': '52px'});
+			</script>
+	    </div>
+		<div class="container">
+			<div id="content">
+				<div class="login_form">
+	    			<div class="title"><span class="title_name">Login for Walnut 1.0</span><span title="Login as anonymous user" class="close_window anonymous_login" id="close_win_btn">X</span></div>
+	    			<div class="login_info">
+				        <form id="login-form" action="/walnut/" method="post">            
+				        	<div class="row inputfield">
+				                <label for="LoginForm_username:">Username:</label><span class="required">*</span>
+				                <input name="LoginForm[username]" id="LoginForm_username" type="text" />                <div class="clear"></div>
+				            </div>
+				            <div class="row inputfield">
+				                <label for="LoginForm_password:">Password:</label><span class="required">*</span>
+				                <input name="LoginForm[password]" id="LoginForm_password" type="password" />                <div class="clear"></div>
+				            </div>
+				            <div class="row submit">
+				                <input id="submit" onclick="return interfaces.f.checkUser();" type="submit" name="yt0" value="Login" />                <div class="clear"></div>
+				            </div>
+				        </form>    
+	        		</div>
+				    <div class="additional">
+				       <a class="anonymous_login"  title="Login as anonymous user">Login as anonymous user</a>
+				       <a class="register"  title="Register as new user">Register as new user</a>
+				    </div>
+	    			<div class="user_register">
+	    				<span class="register_label">Register form</span>
+						<form>
+							<div class="row inputfield">
+								<label for="reg_username">Username:</label><span class="required">*</span>
+								<input type="text" id="reg_username" name="reg_username" />
+							</div>
+							<div class="row inputfield">
+								<label for="reg_passwd">Password:</label><span class="required">*</span>
+								<input type="password" id="reg_passwd" name="reg_passwd" />
+							</div>
+							<div class="row inputfield">
+								<label for="reg_confirmpasswd" class="reg_confirmpasswd">Confirm PW:</label><span class="required">*</span>
+								<input type="password" id="reg_confirmpasswd" name="reg_confirmpasswd" />
+							</div>
+							<div class="row submit">
+								<input type="submit" id="reg_submit" name="reg_submit" value="Submit" onclick="return Walnut.checkRegister()" />
+							</div>
+						</form>
+						<div class="box-tl"></div>
+						<div class="box-tr"></div>
+						<div class="box-br"></div>
+						<div class="box-bl"></div>
+	    			</div>
+				</div>
+				<div class="online_users">
+					<div class="inform_balloon">
+						<div class="balloon"></div>
+						<div class="informer">It can be drag and drop here, you can try it !</div>
+						<div class="clear"></div>
+						<div class="close">Got it !</div>
+						<div class="arrow"></div>
+					</div>
+				
+				    <div class="title">Online user list</div>
+				    <div class="user_list" id="user_list"></div>
+				</div>
+			</div><!-- content -->
+		</div>
+	</div>
+	<div class="bottom" id="bottom">
+	    <div class="state"></div>
+	    <div class="account_info">Login as: <span id="login_as"></span></div>
+	</div>
+	<script type="text/javascript" src="/js/src/uc/dom.js"></script>
+	<script type="text/javascript" src="/js/src/uc/load.js"></script>
+	<script type="text/javascript">
+	/*<![CDATA[*/
+	jQuery(function($) {
+	
+					if(!window.location.hash)
+						$('').focus();
+				
+	});
+	/*]]>*/
+	</script>
+</body>
+</html>

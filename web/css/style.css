@@ -1,0 +1,440 @@
+/***********************************
+ * Author KEN
+ * xukai.ken@gmail.com
+ *
+ * Easychat v1.0 style.css
+ *
+ * 2010.11.29
+ **********************************/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+	font: 0.9em 'Helvetica Neue', Helvetica, 'Lucida Grande', 'Lucida Sans Unicode', sans-serif, '微软雅黑';
+}
+body {
+	overflow-y: hidden;
+	overflow-x: hidden;
+}
+.clear {
+	clear: both;
+}
+.header {
+	border-bottom: 1px dashed #999999;
+	height: 150px;
+}
+#page {
+	position: relative;
+}
+.bottom {
+	background-color: gray;
+	border-top: 1px dashed #000000;
+	bottom: 0;
+	height: 31px;
+	opacity: 0.4;
+	-moz-opacity: 0.4;
+	filter: alpha(opacity=40);
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+.container {
+	margin: 0 auto;
+	width: 405px;
+	position: relative;
+}
+.login_form {
+	background-color: #FFFFFF;
+	border: 1px solid #999999;
+	height: 210px;
+	position: absolute;
+	width: 400px;
+	-moz-box-shadow: 1px 1px 4px #000;
+	-webkit-box-shadow: 1px 1px 4px #000;
+	box-shadow: 1px 1px 4px #000;
+}
+.login_form .title {
+	border-bottom: 1px dotted #999999;
+	cursor: move;
+	font-family: verdana;
+	font-size: 12px;
+	height: 25px;
+	line-height: 24px;
+	padding-left: 6px;
+	background-color: #E2E1E1;
+}
+.title .title_name {
+	float: left;
+	text-shadow: 1px 1px 2px #666666;
+}
+.title .close_window {
+	border: 1px solid #999;
+	cursor: pointer;
+	display: block;
+	float: right;
+	height: 19px;
+	line-height: 18px;
+	margin: 2px 2px 0 0;
+	text-align: center;
+	width: 19px;
+}
+.title .close_window:hover {
+	border: 1px solid #000;
+	background-color: #ccc;
+}
+.online_users {
+	border-color: #999999 #999999 #666666;
+	border-style: solid;
+	border-width: 1px;
+	display: none;
+	margin-top: -1px;
+	position: absolute;
+	right: 0;
+	width: 200px;
+}
+.bottom .state {
+	height: 100%;
+	left: 0;
+	position: absolute;
+}
+.bottom .account_info {
+	font-family: georgia;
+	font-size: 14px;
+	line-height: 27px;
+	position: absolute;
+	right: 0;
+	width: 200px;
+}
+.login_form .login_info, .login_form .user_register {
+	border-bottom: 1px solid #CCCCCC;
+	height: 113px;
+	margin: 0 auto;
+	padding: 20px 30px 10px;
+	width: 295px;
+}
+.login_form .row label {
+	font-family: verdana;
+	font-size: 11px;
+	float: left;
+}
+.login_form .row input {
+	float: right;
+}
+.login_form .row span {
+	float: right;
+	left: 3px;
+	position: relative;
+	top: -4px;
+}
+.inputfield input {
+	height: 16px;
+	padding: 3px;
+	width: 200px;
+	border: 1px solid #ccc;
+	border-top-color: #999;
+	border-right-color: #999;
+}
+.row {
+	height: 27px;
+	line-height: 20px;
+}
+.submit input, button {
+	border: 1px solid #999999;
+	cursor: pointer;
+	font-family: georgia;
+	font-size: 12px;
+	height: 23px;
+	margin: 0 6px 0 0;
+	width: 55px;
+}
+.submit input:hover, button:hover {
+	border-color: #000;
+	background-color: #ccc;
+}
+.required {
+	color: red;
+}
+.login_form .additional {
+	height: 30px;
+	padding: 10px 57px 0;
+}
+.anonymous_login {
+	color: #666666;
+	float: left;
+	font-family: verdana;
+	font-size: 10px;
+	cursor: pointer;
+}
+.register {
+	color: #666666;
+	float: right;
+	font-family: verdana;
+	font-size: 10px;
+	cursor: pointer;
+}
+.login_form .additional a:hover {
+	color: #000;
+}
+.login_form .submit {
+	margin-top: 5px;
+}
+.online_users .title {
+	border-bottom: 1px solid #999999;
+	border-left: 1px solid #999999;
+	border-right: 1px solid #999999;
+	font-family: georgia;
+	font-size: 12px;
+	height: 25px;
+	line-height: 24px;
+	margin-left: -1px;
+	padding-left: 5px;
+	width: 195px;
+	cursor: move;
+	background-color: #E2E1E1;
+	font-family: verdana;
+	text-shadow: 1px 1px 2px #666;
+}
+.guest {
+	list-style: none;
+	cursor: pointer;
+}
+.user_list {
+	width: 200px;
+}
+.chat_win {
+	-webkit-box-shadow: 1px 1px 4px #666666;
+	box-shadow: 1px 1px 4px #666666;
+	-moz-box-shadow: 1px 1px 4px #666666;
+	border: 1px solid #000000;
+	height: 400px;
+	width: 450px;
+	position: absolute;
+	background-color: #fff;
+	z-index: 1;
+}
+.chat_title {
+	color: #666666;
+	font-family: verdana;
+	font-size: 10px;
+	height: 25px;
+	cursor: move;
+	background-color: #E2E1E1;
+}
+.chat_title_close {
+	border: 1px solid #999999;
+	cursor: pointer;
+	display: block;
+	float: right;
+	height: 19px;
+	line-height: 18px;
+	margin: 2px 2px 0 0;
+	text-align: center;
+	width: 19px;
+}
+.chat_title_close:hover {
+	background-color: #CCCCCC;
+	border-color: #000;
+}
+.chat_records {
+	border-bottom: 1px solid #999;
+	border-right: 2px solid #E2E1E1;
+	border-top: 1px dotted #999;
+	font-size: 14px;
+	height: 300px;
+	padding: 0 5px;
+	width: 438px;
+}
+.chat_inputarea {
+	border-top: 1px solid #CCCCCC;
+	height: 72px;
+}
+.chat_inputarea .inputarea {
+	border: 0 none;
+	font-size: 12px;
+	height: 92%;
+	margin: 0;
+	padding: 3px;
+	width: 444px;
+	resize: none;
+}
+.chat_title_name {
+	color: #000000;
+	float: left;
+	font-size: 12px;
+	line-height: 25px;
+	margin-left: 5px;
+	font-family: arial;
+}
+.user_register {
+	border: 1px solid #DCDCDC;
+	position: relative;
+	top: 25px;
+	display: none;
+}
+.user_register .register_label {
+	background-color: #FFFFFF;
+	display: block;
+	font-size: 12px;
+	left: 20px;
+	padding: 0 10px;
+	position: absolute;
+	top: -8px;
+}
+.box-tl {
+	background-image: url("../images/box-tl.png");
+	left: -1px;
+	top: -1px;
+}
+.box-tr {
+	background-image: url("../images/box-tr.png");
+	right: -1px;
+	top: -1px;
+}
+.box-br {
+	background-image: url("../images/box-br.png");
+	bottom: -1px;
+	right: -1px;
+}
+.box-bl {
+	background-image: url("../images/box-bl.png");
+	bottom: -1px;
+	left: -1px;
+}
+.box-tl, .box-tr, .box-br, .box-bl {
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	font-size: 1px;
+	height: 10px;
+	line-height: 1px;
+	position: absolute;
+	width: 10px;
+	z-index: 1;
+}
+.online_users .user_list ul {
+	padding: 2px 8px 0;
+}
+.online_users .user_list ul li {
+	border-bottom: 1px dotted #C9C9C9;
+	line-height: 28px;
+	font-size: 12px;
+	color: #666;
+	padding-left: 5px;
+	font-family: verdana;
+	cursor: pointer;
+	list-style: none;
+}
+.online_users .user_list ul li:HOVER {
+	color: #000;
+	background-color: #ececec;
+}
+.user_list {
+	-webkit-box-shadow: inset 0px 0px 5px #666;
+	-moz-box-shadow: inset 0px 0px 5px #666;
+	box-shadow: inset 0px 0px 2px #666;
+}
+input:FOCUS {
+	background-color: #F8FBD6;
+}
+.inform_balloon {
+	position: absolute;
+	width: 217px;
+	height: 97px;
+	background-color: #F8FBD6;
+	border: 1px solid #F4D7A5;
+	left: -240px;
+	top: -83px;
+	-webkit-box-shadow: 2px 2px 5px #999;
+	-moz-box-shadow: 2px 2px 5px #999;
+	-box-shadow: 2px 2px 5px #999;
+	padding-top: 10px;
+	display: none;
+}
+.chat_title_name span {
+	text-shadow: 1px 1px 2px #999;
+	font-style: italic;
+	padding: 0 7px;
+}
+.arrow {
+	background: url("../images/arrow.png") no-repeat;
+	width: 60px;
+	height: 83px;
+	position: absolute;
+	right: -42px;
+	bottom: 25px;
+}
+.inform_balloon .balloon {
+	float: left;
+	background: url("../images/reminder.gif") no-repeat;
+	width: 36px;
+	height: 36px;
+	margin-left: 5px;
+}
+.inform_balloon .informer {
+	float: left;
+	font-size: 11px;
+	font-family: verdana;
+	width: 149px;
+	margin-left: 15px;
+	margin-top: 2px;
+}
+.inform_balloon .close {
+	font-size: 11px;
+	text-decoration: underline;
+	position: absolute;
+	bottom: 9px;
+	right: 26px;
+	cursor: pointer;
+}
+.chat_records li {
+	line-height: 15px;
+	list-style: none outside none;
+	min-height: 48px;
+	font-size: 12px;
+}
+.chat_records li p {
+	height: 19px;
+	font-size: 10px;
+}
+.chat_records li span.others {
+	color: #808CB4;
+	font-weight: bold;
+	font-size: 13px;
+}
+.chat_records li span.self {
+	color: #999;
+	font-weight: bold;
+	font-size: 13px;
+}
+#assistant {
+	cursor: pointer;
+	display: none;
+	position: absolute;
+}
+.have_fun img {
+	left: 270px;
+	position: absolute;
+	top: 30px;
+}
+.have_fun {
+	position: absolute;
+	top: 0;
+}
+.inform {
+	background-color: #000000;
+	color: #FFFFFF;
+	cursor: pointer;
+	font-size: 12px;
+	height: 100%;
+	margin-right: 3px;
+	padding: 7px 5px 0;
+	width: 160px;
+}
+.inform span {
+	font-weight: bold;
+}
+.chat_history {
+	background-color: #999;
+}
+
