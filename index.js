@@ -283,4 +283,4 @@ Walnut.mineTypes = {
 /**
  * @description Start the server.
  */
-Walnut.start(80);
+Walnut.start(8080);
