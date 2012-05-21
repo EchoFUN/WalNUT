@@ -6,6 +6,7 @@
  * Date 2011.11.10
  */
 
+
 require('./namespace');
 
 Walnut.common = require('./common');
