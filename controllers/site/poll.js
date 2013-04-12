@@ -11,7 +11,6 @@ exports.execute = function(request, response) {
 			data: {}
 		}
 		OExtend(respTemp, resp);
-		var body = new Buffer(JSON.stringify(respTemp));
-		response.end(body);
+		response.end(JSON.stringify(respTemp));
 	});
 }

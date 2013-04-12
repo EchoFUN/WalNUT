@@ -26,7 +26,7 @@ var W_MSG = {
 	error  : {
 		login: '对不起，登陆出现错误！',
 		loginOut: '对不起，登出出现错误！',
-		longPoll: '我艹~，轮训挂起了~！',
+		longPoll: '系统出错了！',
 		sendMsg: '对不起，消息发送失败！',
 		checkName: '检测用户名错误！'
 	}
