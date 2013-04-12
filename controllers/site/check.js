@@ -1,12 +1,12 @@
+var async = require('async');
 
-exports.execute = function(request, response) {
-	var userName = request.post.username;
-	var query = {
-		status: 1,
-		content: ''
-	}
-	if (!Walnut.hasOwnProperty('listedContacts'))
+exports.execute = function(req, resp) {
+	var userName = req.post.username;
+	var query = {};
+	if (!Walnut.listedContacts) {
 		Walnut.listedContacts = [];
+	}
+	
 	var listedContacts = Walnut.listedContacts;
 	if (inArray(listedContacts, userName)) {
 		query.status = 0;
