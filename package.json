@@ -1,7 +1,6 @@
 {
 	"name": "WalNUT",
 	"description": "A instant messaging software.",
-	"version": "2.0",
 	"contributors": {
 		"name": "KEN", 
 		"email": "xukai.ken@gmail.com"
@@ -11,9 +10,11 @@
     	"url": "git@github.com:EchoFUN/WalNUT.git"
 	},
 	"main": "index",
-	
 	"scripts": {
 		"test": "NODE_ENV=development node-dev app",
 		"start": "NODE_ENV=production node app"
+	},
+	"dependencies": {
+		"async": "latest"
 	}
 }

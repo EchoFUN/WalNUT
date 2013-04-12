@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-.project
-=======
-
-.project
->>>>>>> 加入忽略列表。
+﻿.project
+npm-debug.log
+node_modules/*
