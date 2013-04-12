@@ -10,5 +10,10 @@
 		"type": "git",
     	"url": "git@github.com:EchoFUN/WalNUT.git"
 	},
-	"main": "index"
+	"main": "index",
+	
+	"scripts": {
+		"test": "NODE_ENV=development node-dev app",
+		"start": "NODE_ENV=production node app"
+	}
 }
